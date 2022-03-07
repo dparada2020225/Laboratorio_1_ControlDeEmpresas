@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "b1f067df-5dbe-443f-afca-9c3f48e1fff8",
+		"name": "Pdf y exel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pdf con empresa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MjM0OTIsImV4cCI6MTY0NzIyODI5Mn0.sonbyceWufgWdvSzPtRurgQM2vHWZV9yvpIXbw2IpkU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/pdf/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pdf",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excel con empresas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MjM0OTIsImV4cCI6MTY0NzIyODI5Mn0.sonbyceWufgWdvSzPtRurgQM2vHWZV9yvpIXbw2IpkU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/excel/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"excel",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

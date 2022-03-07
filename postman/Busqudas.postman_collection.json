@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "d8734b18-6048-4563-bbab-261a10e2443f",
+		"name": "Busqudas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "personal y cantidad por empresa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTQ0OTEsImV4cCI6MTY0NzIxOTI5MX0.C4kd9IlTsky1_vQ_CnQ_jve0crFt8UeE2v2C3e4zw0A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/ObtenerNumeroEmpleados/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ObtenerNumeroEmpleados",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empleados por id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NTJkYzI0OGQ3ZTlhODMzYWM1MTIiLCJub21icmUiOiJDb2NhIiwiZW1haWwiOiJDb2NhQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MjIxMzUsImV4cCI6MTY0NzIyNjkzNX0.3YSw29ZUg4hbTCgXG-v4Rwayi8WBuDPD9GByhS-SHm0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "622575be28fe9d19a3a102b7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleadoXId/622552dc248d7e9a833ac511",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleadoXId",
+						"622552dc248d7e9a833ac511"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empleados por nombre ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTQ0OTEsImV4cCI6MTY0NzIxOTI5MX0.C4kd9IlTsky1_vQ_CnQ_jve0crFt8UeE2v2C3e4zw0A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "a",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "e",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleadoXNombre/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleadoXNombre",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empleados por puesto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTQ0OTEsImV4cCI6MTY0NzIxOTI5MX0.C4kd9IlTsky1_vQ_CnQ_jve0crFt8UeE2v2C3e4zw0A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "puesto",
+							"value": "e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleadoXPuesto/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleadoXPuesto",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empleados por Departamento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTQ0OTEsImV4cCI6MTY0NzIxOTI5MX0.C4kd9IlTsky1_vQ_CnQ_jve0crFt8UeE2v2C3e4zw0A",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NTJkYzI0OGQ3ZTlhODMzYWM1MTIiLCJub21icmUiOiJDb2NhIiwiZW1haWwiOiJDb2NhQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTk4MjMsImV4cCI6MTY0NzIyNDYyM30.MSj92GOqRs6o8vB6N6ocj-y6CgQfaOjsgo2c5v65cLQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "departamento",
+							"value": "e",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/empleadoXDepartamento/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empleadoXDepartamento",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "empleados entre todos los empleados de todas las empresas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NDE0M2U3YzBlNTI4ZmU5NDQ4MmQiLCJub21icmUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sIjoiQWRtaW4iLCJpYXQiOjE2NDY2MTE2OTQsImV4cCI6MTY0NzIxNjQ5NH0.gCYaqo3xCvJD-S39SnkBc4S4QuypfP-5id6THugFMYI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "meme",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/TodosLosEmpleados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"TodosLosEmpleados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

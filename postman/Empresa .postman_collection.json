@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "bb233db1-7ad3-4abb-bf45-940c5f3fa05a",
+		"name": "Empresa ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agregar Empleado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MjM0OTIsImV4cCI6MTY0NzIyODI5Mn0.sonbyceWufgWdvSzPtRurgQM2vHWZV9yvpIXbw2IpkU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "meme",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "gerente",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "ventas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarEmpleado/62254e4853baeabc79a278ac",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarEmpleado",
+						"62254e4853baeabc79a278ac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTIwNDQsImV4cCI6MTY0NzIxNjg0NH0.Hm5BdHu-SeTl7HHGv4bJCeM00U04w-glmVuc0AI_nTU",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NTJkYzI0OGQ3ZTlhODMzYWM1MTIiLCJub21icmUiOiJDb2NhIiwiZW1haWwiOiJDb2NhQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTMyNDAsImV4cCI6MTY0NzIxODA0MH0.QvFY8r90yNOkT_8ki-QnB0g-7cHfi7-DPS_l4L52Vjg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Oscar3",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "sadfsd",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/EditarEmpleado/62254e986cba40b32765bcd1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EditarEmpleado",
+						"62254e986cba40b32765bcd1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NGU0ODUzYmFlYWJjNzlhMjc4YWQiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTIwNDQsImV4cCI6MTY0NzIxNjg0NH0.Hm5BdHu-SeTl7HHGv4bJCeM00U04w-glmVuc0AI_nTU",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI1NTJkYzI0OGQ3ZTlhODMzYWM1MTIiLCJub21icmUiOiJDb2NhIiwiZW1haWwiOiJDb2NhQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDY2MTMyNDAsImV4cCI6MTY0NzIxODA0MH0.QvFY8r90yNOkT_8ki-QnB0g-7cHfi7-DPS_l4L52Vjg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "puesto",
+							"value": "sadfsd",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/EliminarEmpleado/622556b41c7103cdb7250eb5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EliminarEmpleado",
+						"622556b41c7103cdb7250eb5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

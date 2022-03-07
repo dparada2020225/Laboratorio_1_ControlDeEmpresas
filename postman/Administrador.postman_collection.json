@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "5fb48535-d8a0-49ff-abc6-6afbfb672c38",
+		"name": "Administrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear  Empresa ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjIwNDY2OTA2MGYxYTBmYTYyMjBlZTkiLCJub21icmUiOiJBZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sIjoiQWRtaW4iLCJpYXQiOjE2NDYyODI3MjgsImV4cCI6MTY0NjYyODMyOH0.88m7nz-KmwpJql--sG81Zx0R-uN4prKjkv3NO6HKUfs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Coca",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "algo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/crearEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"crearEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Empresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjIwNDg5MmYyZjhkMjlhMzg1MmMyNDkiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDYyODMwMDEsImV4cCI6MTY0NjYyODYwMX0.H4GvZvOAoWzC8_JRAwucCZUHf1MiXmLROqHdBhe_x8k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Lays",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarEmpresa/:idEmpresa/:idUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarEmpresa",
+						":idEmpresa",
+						":idUser"
+					],
+					"variable": [
+						{
+							"key": "idEmpresa",
+							"value": null
+						},
+						{
+							"key": "idUser",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empresa",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjIwNDg5MmYyZjhkMjlhMzg1MmMyNDkiLCJub21icmUiOiJMYXlzIiwiZW1haWwiOiJMYXlzQGdtYWlsLmNvbSIsInJvbCI6IkVtcHJlc2EiLCJpYXQiOjE2NDYyODMwMDEsImV4cCI6MTY0NjYyODYwMX0.H4GvZvOAoWzC8_JRAwucCZUHf1MiXmLROqHdBhe_x8k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Peppsi",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarEmpresa/:idEmpresa/:idUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarEmpresa",
+						":idEmpresa",
+						":idUser"
+					],
+					"variable": [
+						{
+							"key": "idEmpresa",
+							"value": null
+						},
+						{
+							"key": "idUser",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
